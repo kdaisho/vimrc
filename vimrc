@@ -296,7 +296,7 @@ let NERDTreeMinimalUI=1
 " Display current file in the NERDTree ont the left
 nmap <silent> <leader>f :NERDTreeToggle<CR>
 
-"-------------------------
+"------------------------
 " Syntastic
 
 function! s:FindSyntasticExecPath(toolName)
