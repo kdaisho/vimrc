@@ -222,12 +222,15 @@ endif
 " Check new bundles on startup
 NeoBundleCheck
 
+" JavaScript indent
+"set g:js_indent = 'haha' 
+
 "----------------------------
 " My settings
 let mapleader=","
 " inoremap {<CR> {<CR>}<C-o>O
 " inoremap <C-Return> <CR><CR><C-o>k<Tab>
-imap <C-Return> <CR><CR><C-o>k<Tab>
+" imap <C-Return> <CR><CR><C-o>k<Tab>
 "--------------------------------------------------
 " Bundles settings
 
@@ -653,7 +656,7 @@ set autoindent
 set smartindent
 
 " Replace tabs with spaces
-set expandtab
+" set expandtab
 
 " Whe you hit tab at start of line, indent added according to shiftwidth value
 set smarttab
@@ -819,6 +822,7 @@ if has("autocmd")
         " Not enable Folding - it really slow on large files, uses plugin vim-javascript-syntax
         " au FileType javascript* call JavaScriptFold()
         au FileType html let b:loaded_delimitMate = 1
+        au FileType javascript let b:loaded_delimitMate = 1
         au FileType handlebars let b:loaded_delimitMate = 1
 
     " Group end
