@@ -299,6 +299,9 @@ let NERDTreeMinimalUI=1
 " Display current file in the NERDTree ont the left
 nmap <silent> <leader>f :NERDTreeToggle<CR>
 
+" Close NERDTree if the only remaining window is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 "------------------------
 " Syntastic
 
