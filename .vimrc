@@ -514,7 +514,7 @@ call arpeggio#map('i', '', 0, 'jk', '<ESC>')
 "--------------------------------------------------
 " Colorscheme
 
-colorscheme blue
+colorscheme ron
 
 " Setting up light color scheme
 set background=dark
@@ -531,7 +531,7 @@ highlight SpecialKey ctermfg=8
 "set exrc secure
 
 " Buffer will be hidden instead of closed when no one display it
-"set hidden
+set hidden
 
 " Enable clipboard
 set clipboard=unnamed
