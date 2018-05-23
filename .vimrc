@@ -222,13 +222,14 @@ endif
 " Check new bundles on startup
 NeoBundleCheck
 
-" JavaScript indent
-"set g:js_indent = 'haha' 
-
 "----------------------------
 " My settings
 let mapleader=","
-" inoremap {<CR> {<CR>}<C-o>O
+set viminfo='12
+
+inoremap {<CR> {<CR>}<C-o>O<Tab>
+inoremap [<CR> [<CR>];<C-o>O<Tab>
+
 " inoremap <C-Return> <CR><CR><C-o>k<Tab>
 " imap <C-Return> <CR><CR><C-o>k<Tab>
 "--------------------------------------------------
@@ -640,7 +641,7 @@ set number
 set cursorline
 
 " Highlight current column
-set cursorcolumn
+" set cursorcolumn
 
 " maximum text length at 80 symbols, vim automatically breaks longer lines
 " set textwidth=80
