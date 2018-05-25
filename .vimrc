@@ -194,6 +194,9 @@ NeoBundle 'Shougo/neoyank.vim'
 " Plugin for chord mappings
 NeoBundle 'kana/vim-arpeggio'
 
+" post install (yarn install | npm install) then load plugin only for editing supported files
+NeoBundle 'prettier/vim-prettier', { 'do': 'yarn install' }
+
 " JShint :)
 " But not necessary with syntastics
 " NeoBundle 'walm/jshint.vim'
@@ -232,7 +235,6 @@ inoremap [<CR> [<CR>];<C-o>O
 
 nnoremap <C-h> 0
 nnoremap <C-l> $
-
 "--------------------------------------------------
 " Bundles settings
 
