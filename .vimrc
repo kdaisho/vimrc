@@ -161,7 +161,7 @@ NeoBundle 'tpope/vim-markdown'
 
 " Highlights the matching HTML tag when the cursor
 " is positioned on a tag.
-NeoBundle 'gregsexton/MatchTag'
+" NeoBundle 'gregsexton/MatchTag'
 
 " Automatically add closing tags in html-like formats
 NeoBundle 'alvan/vim-closetag'
@@ -227,11 +227,12 @@ NeoBundleCheck
 let mapleader=","
 set viminfo='12
 
-inoremap {<CR> {<CR>}<C-o>O<Tab>
-inoremap [<CR> [<CR>];<C-o>O<Tab>
+inoremap {<CR> {<CR>}<C-o>O
+inoremap [<CR> [<CR>];<C-o>O
 
-" inoremap <C-Return> <CR><CR><C-o>k<Tab>
-" imap <C-Return> <CR><CR><C-o>k<Tab>
+nnoremap <C-h> 0
+nnoremap <C-l> $
+
 "--------------------------------------------------
 " Bundles settings
 
