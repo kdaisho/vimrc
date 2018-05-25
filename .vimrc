@@ -515,11 +515,12 @@ set completeopt-=preview
 
 " map jk to escape
 call arpeggio#map('i', '', 0, 'jk', '<ESC>')
+call arpeggio#map('v', '', 0, 'jk', '<ESC>')
 
 "--------------------------------------------------
 " Colorscheme
 
-colorscheme ron
+colorscheme koehler
 
 " Setting up light color scheme
 set background=dark
