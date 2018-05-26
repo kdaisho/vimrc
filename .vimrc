@@ -824,6 +824,7 @@ if has("autocmd")
         au BufRead,BufNewFile *.xjst set ft=javascript
         au BufRead,BufNewFile *.tt2 set ft=tt2
         au BufRead,BufNewFile *.plaintex set ft=plaintex.tex
+        au BufRead,BufNewFile *.ts set ft=javascript
 
         " Auto close preview window, it uses with tags,
         " I don't use it
