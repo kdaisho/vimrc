@@ -235,6 +235,10 @@ inoremap [<CR> [<CR>];<C-o>O
 
 nnoremap <C-h> 0
 nnoremap <C-l> $
+
+" Resize split shortcuts
+nnoremap <silent> <Leader>+ :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
+nnoremap <silent> <Leader>- :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
 "--------------------------------------------------
 " Bundles settings
 
