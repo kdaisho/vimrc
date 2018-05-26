@@ -744,6 +744,9 @@ nmap <space> za
 " Allow backspace to remove indents, newlines and old text
 set backspace=indent,eol,start
 
+" Copy selection to system clipboard
+vnoremap <leader>y "+y
+
 " toggle paste mode on \p
 set pastetoggle=<leader>p
 
